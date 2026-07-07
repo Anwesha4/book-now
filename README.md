@@ -1,51 +1,22 @@
-# Book Now - Event Booking Platform
+# Book Now
 
-A full-stack MERN Event Booking Platform that allows users to browse events, register an account, verify their identity using OTP, and book event tickets online. The application includes secure authentication, booking management, and an admin dashboard for managing events.
+A full-stack MERN Event Booking Platform that enables users to browse events, securely book tickets, and manage their bookings through an intuitive interface. The application includes JWT-based authentication, OTP verification, booking management, and an admin dashboard for event management.
+
+---
 
 ## Live Demo
 
-Frontend: https://book-now-iota.vercel.app
+**Application:**  
+https://book-now-iota.vercel.app
 
-Backend API: https://book-now-api-npqr.onrender.com
-
-## GitHub Repository
-
+**Source Code:**  
 https://github.com/Anwesha4/book-now
-
----
-
-## Project Overview
-
-Book Now is a full-stack web application built using the MERN stack. It provides an end-to-end event booking experience with user authentication, event management, and booking functionality. The application follows a client-server architecture with a React frontend, Express backend, and MongoDB database.
-
----
-
-## Features
-
-### User Features
-
-- User registration
-- Secure login using JWT authentication
-- Browse available events
-- View event details
-- Book event tickets
-- OTP verification before booking
-- Booking confirmation email
-- User dashboard
-
-### Admin Features
-
-- Admin authentication
-- Create events
-- Manage events
-- View bookings
 
 ---
 
 ## Tech Stack
 
 ### Frontend
-
 - React.js
 - Vite
 - React Router
@@ -53,7 +24,6 @@ Book Now is a full-stack web application built using the MERN stack. It provides
 - Tailwind CSS
 
 ### Backend
-
 - Node.js
 - Express.js
 - MongoDB
@@ -62,17 +32,113 @@ Book Now is a full-stack web application built using the MERN stack. It provides
 - Nodemailer
 
 ### Deployment
-
-- Vercel (Frontend)
-- Render (Backend)
-- MongoDB Atlas (Database)
+- Vercel
+- Render
+- MongoDB Atlas
 
 ---
 
-## Project Structure
+# Application Preview
 
-```
+## Home Page
+
+Browse all available events with pricing, date, venue, and availability information.
+
+![Home Page](assets/home.png)
+
+---
+
+## Authentication
+
+<table>
+<tr>
+<td align="center">
+
+### Login
+
+<img src="assets/login.png" width="420"/>
+
+</td>
+
+<td align="center">
+
+### Register
+
+<img src="assets/signUp.png" width="420"/>
+
+</td>
+</tr>
+</table>
+
+---
+
+## Event Details
+
+View complete information about an event before booking.
+
+![Event Details](assets/event.png)
+
+---
+
+## Dashboards
+
+<table>
+<tr>
+<td align="center">
+
+### User Dashboard
+
+<img src="assets/user-dashboard.png" width="420"/>
+
+</td>
+
+<td align="center">
+
+### Admin Dashboard
+
+<img src="assets/admin-dashboard.png" width="420"/>
+
+</td>
+</tr>
+</table>
+
+---
+
+# Features
+
+### User
+
+- User Registration
+- Secure Login using JWT Authentication
+- Browse Available Events
+- View Event Details
+- Book Event Tickets
+- OTP Verification
+- Booking Confirmation
+- User Dashboard
+- Responsive Design
+
+### Admin
+
+- Admin Authentication
+- Create Events
+- Manage Events
+- View Bookings
+
+---
+
+# Project Structure
+
+```text
 book-now
+│
+├── assets
+│   ├── home.png
+│   ├── login.png
+│   ├── signUp.png
+│   ├── event.png
+│   ├── user-dashboard.png
+│   └── admin-dashboard.png
 │
 ├── client
 │   ├── src
@@ -92,15 +158,13 @@ book-now
 
 ---
 
-## Installation
+# Installation
 
-### Clone the Repository
+## Clone the repository
 
 ```bash
 git clone https://github.com/Anwesha4/book-now.git
 ```
-
-Move into the project directory.
 
 ```bash
 cd book-now
@@ -108,14 +172,14 @@ cd book-now
 
 ---
 
-### Backend Setup
+## Backend Setup
 
 ```bash
 cd server
 npm install
 ```
 
-Create a `.env` file inside the `server` directory.
+Create a `.env` file inside the `server` folder.
 
 ```env
 PORT=5000
@@ -133,7 +197,7 @@ npm run dev
 
 ---
 
-### Frontend Setup
+## Frontend Setup
 
 ```bash
 cd client
@@ -154,65 +218,65 @@ npm run dev
 
 ---
 
-## API Endpoints
+# API Endpoints
 
-### Authentication
+## Authentication
 
 - POST `/api/auth/register`
 - POST `/api/auth/login`
 - POST `/api/auth/send-otp`
 - POST `/api/auth/verify-otp`
 
-### Events
+## Events
 
 - GET `/api/events`
 - GET `/api/events/:id`
 
-### Bookings
+## Bookings
 
 - POST `/api/bookings`
 - GET `/api/bookings/user`
 
 ---
 
-## Authentication
+# Authentication
 
-- JWT-based authentication
-- Protected routes
-- Authorization middleware
-
----
-
-## Deployment
-
-Frontend deployed on Vercel
-
-Backend deployed on Render
-
-Database hosted on MongoDB Atlas
+- JWT-based Authentication
+- Protected Routes
+- Authorization Middleware
 
 ---
 
-## Known Issues
+# Deployment
 
-The deployed application currently experiences occasional OTP email delivery issues due to Gmail SMTP connection timeouts on the hosting platform. Email functionality works correctly in local development. Migrating to a dedicated email service such as Resend is planned.
+| Service | Platform |
+|---------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MongoDB Atlas |
 
 ---
 
-## Future Improvements
+# Known Issue
 
-- Payment gateway integration
-- Search and filter events
-- Event categories
-- Seat selection
-- Email service migration (Resend)
-- User profile editing
-- Event image uploads
+The deployed application may occasionally experience OTP email delivery issues because Gmail SMTP connections can time out on the hosting platform. The feature works correctly in local development. Migrating to a dedicated email provider such as Resend is planned.
+
+---
+
+# Future Improvements
+
+- Payment Gateway Integration
+- Search & Filter Events
+- Event Categories
+- Seat Selection
+- Email Service Migration (Resend)
+- User Profile Management
+- Event Image Uploads
 - Pagination
 
 ---
 
-## Author
+# Author
 
 **Anwesha Ganguly**
 
